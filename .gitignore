@@ -1,0 +1,10 @@
+/venv
+.idea
+# Sphinx documentation
+docs/_build/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+출처: https://thinkingtool.tistory.com/entry/Python을-위한-gitignore [생각하는 톱니바퀴:티스토리]
