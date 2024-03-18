@@ -10,7 +10,6 @@ for i in range(n-1, -1, -1):
     if array[i] <= k:
         count = count + k // array[i]
         k = k % array[i]
-g
         if k == 0 or i == 0:
             break
 
