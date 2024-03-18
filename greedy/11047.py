@@ -8,9 +8,9 @@ for i in range(n):
 
 for i in range(n-1, -1, -1):
     if array[i] <= k:
-        count += k // array[i]
+        count = count + k // array[i]
         k = k % array[i]
-
+g
         if k == 0 or i == 0:
             break
 
