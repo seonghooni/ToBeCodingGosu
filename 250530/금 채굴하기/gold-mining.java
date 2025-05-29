@@ -34,7 +34,7 @@ public class Main {
         int max_count = 0;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
-                for(int level=2*(n-1); level>0; level--){
+                for(int level=2*(n-1); level>=0; level--){
                     int golds = getNumOfGold(i, j, level);
 
                     if(golds * m >= getArea(level)){
