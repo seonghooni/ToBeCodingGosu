@@ -29,24 +29,32 @@ public class Main {
                 grid[i][j] = sc.nextInt();
         // Please write your code here.
 
-        int max_value = 0;
+        int max_count = 0;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 for(int level=0; level<3; level++){
+                    int cost = 0;
                     int value = 0;
+                    int count = 0;
                     int length = dx[level].length;
                     for(int k=0; k<length; k++) {
                         int nx = i + dx[level][k];
                         int ny = j + dy[level][k];
 
-                        if(in_range(nx,ny) && grid[nx][ny] == 1) value +=1;
+                        if(in_range(nx,ny)){
+                            cost += 1;
+                            if(grid[nx][ny] == 1) {
+                                value += m;
+                                count += 1;
+                            }
+                        }
                     }
-                    max_value = Math.max(max_value, value);
+                    if(value-cost >= 0) max_count = Math.max(max_count, count);
                 }
             }
         }
 
-        System.out.println(max_value);
+        System.out.println(max_count);
     }
 
 }
