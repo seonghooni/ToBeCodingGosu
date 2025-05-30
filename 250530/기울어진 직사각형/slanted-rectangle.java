@@ -47,8 +47,8 @@ public class Main {
 
         for(int i=1; i<=n; i++) {
             for(int j=1; j<=n; j++) {
-                for(int k=1; k<=max_length; k++) {
-                    for(int l=1; l<=max_length; l++) {
+                for(int k=1; k<=n-1; k++) {
+                    for(int l=1; l<=n-1; l++) {
                         ans = Math.max(ans, getScore(i,j,k,l));
                     }
                 }
