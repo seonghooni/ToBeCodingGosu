@@ -58,11 +58,13 @@ public class Main {
             grid[x][y] = 0;
         }
 
+        int count = 0;
         for(int i=0; i<pairs.length; i++) {
             Pair pair = pairs[i];
-
-            ans = Math.max(ans, bfs(pair.x, pair.y, visited));
+            count += bfs(pair.x, pair.y, visited);
         }
+
+        ans = Math.max(ans, count);
 
         // 원상복구
         for(int i=0; i<positions.length; i++){
