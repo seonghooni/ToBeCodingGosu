@@ -2,7 +2,7 @@ import java.util.*;
 public class Main {
 
     static int max_town = 0;
-    static int max_k = 0;
+    static int max_k = 1;
     static int[] dx = new int[]{1, -1, 0, 0};
     static int[] dy = new int[]{0, 0, 1, -1};
     static int n, m;
