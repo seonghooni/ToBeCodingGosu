@@ -15,7 +15,7 @@ public class Main {
             int left = 0;
             int right = n-1;
             
-            int min_idx = t;
+            int min_idx = n;
             int mid = (left + right) / 2;
             while(left <= right) {
                 mid = (left + right) / 2;
